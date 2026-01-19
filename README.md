@@ -42,7 +42,7 @@ The only way out with these calculators in solving such integrals is to write yo
 
 Let's see how IVEE2 does:
 
-![20260119_152258](https://github.com/user-attachments/assets/a4c943aa-a4fb-483e-bc7c-e7f92ea79bd2){:height="50%" width="50%"}
+![20260119_152258](https://github.com/user-attachments/assets/a4c943aa-a4fb-483e-bc7c-e7f92ea79bd2  |200)
 
 
 
