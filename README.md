@@ -43,7 +43,8 @@ The only way out with these calculators in solving such integrals is to write yo
 Let's see how IVEE2 does:
 ![20260119_152258](https://github.com/user-attachments/assets/dbb88cfc-3607-41e5-8385-2dc9c3540e19)
 
-<img src="[20260119_152258](https://github.com/user-attachments/assets/dbb88cfc-3607-41e5-8385-2dc9c3540e19)" style="width:50%; height:auto;" />
+<img src="https://github.com/user-attachments/assets/dbb88cfc-3607-41e5-8385-2dc9c3540e19" style="width:50%; height:auto;" />
+
 
 
 
