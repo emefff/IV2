@@ -30,6 +30,10 @@ $$
 \int_{-128}^{128} [u(u^2-47^2)(u^2-88^2)(u^2-117^2)]^2 \, du = 1.31026895247E28
 $$
 
+On first glance, this is solvable analytically, probably by a 16 year old pupil, right? But numerically, this integral is a differnt story. It is spiky between the roots and reaching large numbers. Any algorithm tackling this must either be able to resolve the spikes with a great number of intervals or be an adaptive algorithm. To prove this integral is far from trivial numerically, the following image shows some results from some 'all star' classic RPN calculators:
+
+
+
 
 
 
