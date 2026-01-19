@@ -455,7 +455,7 @@ Ivee2 is operated by 16 keys only it offers a wide range of functions
 A LiIon-Battery is recommended with nice!nanoV2 as it doesn't need additional charging board. 
 I recommend a BL-5C because they are available everywhere, derived from a Nokia battery that seems to live forever.
 The only board necessary in this calculator is nice!nanov2. Thus the design can be quite compact, depending on the display used.
-
+Don't forget to include a reset button during development for flashing.
 
   ____________________
 
