@@ -49,6 +49,6 @@ Let's see how IVEE2 does:
   <img src="https://github.com/user-attachments/assets/dbb88cfc-3607-41e5-8385-2dc9c3540e19" style="width:50%; height:auto;" />
 </p>
 
-Clearly, we find the implemented algorithm can in fact solve this integral. The only downside is the number of digits displayed. Internally, looking at the serial monitor, we will find a vastly better accuracy. 
+Clearly, we find the implemented algorithm can in fact solve this integral. The only downside is the number of digits displayed. Internally, looking at the serial monitor, we will find a vastly better accuracy. In stack a we find the error of the calculation, in stack level b the result. 
 
 
