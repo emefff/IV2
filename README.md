@@ -11,12 +11,25 @@ Being an amateur programming and software enthusiast I used Kilo Code with mostl
 
 ## Recommendations
 
-From my experience, I started this project with Arduino, PlatformIO is the much better IDE regarding nice!nanov2. With Arduino I was not even able to upload anything, some knock-off boards do not even allow uploading .uf2 binaries, although they claim being able. Thus I recommend anyone building his/her own IVEE2 to use:
+From my experience, I started this project with Arduino, PlatformIO is the much better IDE in conjunction with  nice!nanov2. With Arduino I was not even able to upload anything, some knock-off boards do not even allow uploading .uf2 binaries, although they claim being able. Thus I recommend anyone building his/her own IVEE2 to use:
+
 -) PlatformIO as IDE, my platformio.ini is included.
+
 -) the original Nice!NanoV2. Granted, it is not cheap, but some of the knock-offs clearly do not work. 
+
 -) also solder a reset button to the board. Sometimes it needs two resets before uploading the firmware.
--) a very common LiIon battery like the one used here, which can be found anywhere on this planet. If your battery capacity is even higher, nice!nanov2 allows to solder a resistor to change the charging current to 500mA instead of the standard 100mA (fine by me, increases battery life but takes longer to charge)
--)
+
+-) a very common LiIon battery like the one used here, which can be found anywhere on this planet. If your battery capacity is even higher, nice!nanov2 allows to solder a resistor to change the charging current to 500mA instead of the standard 100mA 
+(fine by me, increases battery life but takes longer to charge)
+
+## Changes in IVEE2
+
+-) Integration algorithm: Being an RPN calculator enthusiast and being aware of their historic significance in science and engineering, I really wanted to include a better algorithm in IVEE2. An algorithm that can even outperform the algorithms present on some of the 'stars' in the RPN sky. There are many examples of functions that cannot be solved adequately with some of the most cherished (and expensive) RPN calculators. To readers of the HP Journal, specifically issue 8/1980, where professor William Kahan presented the capabilties and shortcomings of the integration algorithm developed for HP 34C, which is, to my knowledge, also included in HP 15C, HP41C (Advantage Module) and HP42s, this is not news. Personally, I tested numerous calculators and integration algorithms in user programs of the above mentioned calculators if they are able to solve the following integral numerically among others. It can be found in HP Journal 8/1980 p. 28:
+
+$$
+\int_{0}^{1} x^2 \, dx = \frac{1}{3}
+$$
+
 
 
 
