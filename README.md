@@ -32,6 +32,9 @@ $$
 
 On first glance, this is solvable analytically, probably by a 16 year old pupil, right? But numerically, this integral is a different story. It is spiky between the roots and reaching large numbers. Any algorithm tackling this must either be able to resolve the spikes with a great number of intervals or be an adaptive algorithm. To prove this integral is far from trivial numerically, the following image shows some results from some 'all star' classic RPN calculators:
 
+![image1](https://github.com/user-attachments/assets/861c44a0-5399-473c-8537-32584fee2fb1)
+
+HP41c uses the INTEG command from the Advantage module, the others use their oboard integration algorithm. All three calculators fail solving the integral. They are able to solve it in the halved interval 0 to 128, though:
 
 
 
