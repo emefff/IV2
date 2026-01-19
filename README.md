@@ -32,11 +32,11 @@ $$
 
 On first glance, this is solvable analytically, probably by a 16 year old pupil, right? But numerically, this integral is a different story. It is spiky between the roots and reaching large numbers. Any algorithm tackling this must either be able to resolve the spikes with a great number of intervals or be an adaptive algorithm. To prove this integral is far from trivial numerically, the following image shows some results from some 'all star' classic RPN calculators:
 
-![image1](https://github.com/user-attachments/assets/861c44a0-5399-473c-8537-32584fee2fb1)
+<img src="https://github.com/user-attachments/assets/861c44a0-5399-473c-8537-32584fee2fb1" style="width:50%; height:auto;" />
 
 HP41c uses the INTEG command from the Advantage module, the others use their oboard integration algorithm. All three calculators fail solving the integral. They are able to solve it in the halved interval from 0 to 128, though:
 
-![image2](https://github.com/user-attachments/assets/798c3573-2562-4916-b827-b54faa239288)
+<img src="https://github.com/user-attachments/assets/798c3573-2562-4916-b827-b54faa239288" style="width:50%; height:auto;" />
 
 The only way out with these calculators in solving such integrals is to write your own integration algorithms in user code (die-hard HP41c might even write MCODE). 
 
