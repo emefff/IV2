@@ -41,8 +41,10 @@ HP41c uses the INTEG command from the Advantage module, the others use their obo
 The only way out with these calculators in solving such integrals is to write your own integration algorithms in user code (die-hard HP41c might even write MCODE). 
 
 Let's see how IVEE2 does:
+![20260119_152258](https://github.com/user-attachments/assets/dbb88cfc-3607-41e5-8385-2dc9c3540e19)
 
-![[20260119_152258][https://github.com/user-attachments/assets/a4c943aa-a4fb-483e-bc7c-e7f92ea79bd2|200]]
+<img src="[20260119_152258](https://github.com/user-attachments/assets/dbb88cfc-3607-41e5-8385-2dc9c3540e19)" style="width:50%; height:auto;" />
+
 
 
 
