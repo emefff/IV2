@@ -54,7 +54,8 @@ HP41c uses the INTEG command from the Advantage module, the others use their obo
 </p>
 
 The only way out with these calculators in solving such integrals is to write your own integration algorithms in user code, die-hard HP41c users might even write MCODE. 
-In IVEE2, the above function can make use of RAM register nr. 1 (of course it can be done with the stack too) when entering something like the following. The swares of 47, 88 and 117 are stored in flash registers 97, 98 and 99:
+In IVEE2, the above function can make use of RAM register nr. 1 (of course it can be done with the stack too) when entering something like the following. The sqares of 47, 88 and 117 are stored in flash registers 97, 98 and 99:
+
 "1, STR, CLR, 1, RCR, 2, POW, 99, RCL, -, 1, RCR, 2, POW, 98, RCL, -, *, 1, RCR, 2, POW, 97, RCL, -, *, 1, RCR, *, 2, POW"
 
 To integrate this function place in on top of the PRG list and enter the limits on the stack: "128 N ENTER ENTER N FINT". 
