@@ -47,7 +47,7 @@ On first glance, this is solvable analytically, probably by a 16 year old pupil,
   <img src="https://github.com/user-attachments/assets/861c44a0-5399-473c-8537-32584fee2fb1" style="width:50%; height:auto;" />
 </p>
 
-HP41c uses the INTEG command from the Advantage module, the others use their oboard integration algorithm. All three calculators fail solving the integral. They are able to solve it in the halved interval from 0 to 128, though. This is also mentioned by Prof. Kahan in the mentioned article:
+HP41c uses the INTEG command from the Advantage module, the others use their onboard integration algorithm. All three calculators fail solving the integral. They are able to solve it in the halved interval from 0 to 128, though. This is also mentioned by Prof. Kahan in the mentioned article:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/798c3573-2562-4916-b827-b54faa239288" style="width:50%; height:auto;" />
