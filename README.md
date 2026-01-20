@@ -32,6 +32,7 @@ The new chip has vastly more RAM, so the full screen buffer for SSD1306 is not a
   <img src="https://github.com/user-attachments/assets/98f39e8e-1504-46ef-aae1-f36a729e2209" style="width:50%; height:auto;" />
 </p>
 
+Just like with IVEE, the function to plot must be placed on top in the program list (use TOP for this in PRG mode). Just enter the limits and plot the function with "0 ENTER 2 FPLOT". 
 
 ### Integration algorithm 
 Being an RPN calculator enthusiast and aware of their historic significance in science and engineering, I really wanted to include a better algorithm in IVEE2. An algorithm that can even outperform the algorithms present on some of the 'stars' in the RPN sky. There are many examples of functions that cannot be solved adequately with some of the most cherished (and expensive) RPN calculators. To readers of the HP Journal, specifically issue 8/1980, where professor William Kahan presented the capabilties and shortcomings of the integration algorithm developed for HP 34C, which is, to my knowledge, also included in HP 15C, HP41C (Advantage Module) and HP42s, this is not news. Personally, I tested numerous calculators and integration algorithms in user programs of the above mentioned calculators if they are able to solve the following integral numerically, among others. It can be found in HP Journal 8/1980 p. 28:
@@ -53,6 +54,10 @@ HP41c uses the INTEG command from the Advantage module, the others use their obo
 </p>
 
 The only way out with these calculators in solving such integrals is to write your own integration algorithms in user code, die-hard HP41c users might even write MCODE. 
+In IVEE2, the above function can make use of RAM register nr. 1 (of course it can be done with the stack too) when entering something like the following. The swares of 47, 88 and 117 are stored in flash registers 97, 98 and 99:
+"1, STR, CLR, 1, RCR, 2, POW, 99, RCL, -, 1, RCR, 2, POW, 98, RCL, -, *, 1, RCR, 2, POW, 97, RCL, -, *, 1, RCR, *, 2, POW"
+
+To integrate this function place in on top of the PRG list and enter the limits on the stack: "128 N ENTER ENTER N FINT". 
 
 Let's see how IVEE2 does:
 <p align="center">
