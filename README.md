@@ -24,6 +24,15 @@ From my experience, I started this project with Arduino, PlatformIO is the much 
 
 ## Changes in IVEE2
 
+### Plotting functions
+
+The new chip has vastly more RAM, so the full screen buffer for SSD1306 is not an issue. 1x1 pixel graphs look a lot finer that the previous 2x2 pixels. A comparison between IVEE and IVEE2 with ln from 0 to 2 is shown in the following image. The new printing algorithm also connects the dots with line elements:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/98f39e8e-1504-46ef-aae1-f36a729e2209" style="width:50%; height:auto;" />
+</p>
+
+
 ### Integration algorithm 
 Being an RPN calculator enthusiast and aware of their historic significance in science and engineering, I really wanted to include a better algorithm in IVEE2. An algorithm that can even outperform the algorithms present on some of the 'stars' in the RPN sky. There are many examples of functions that cannot be solved adequately with some of the most cherished (and expensive) RPN calculators. To readers of the HP Journal, specifically issue 8/1980, where professor William Kahan presented the capabilties and shortcomings of the integration algorithm developed for HP 34C, which is, to my knowledge, also included in HP 15C, HP41C (Advantage Module) and HP42s, this is not news. Personally, I tested numerous calculators and integration algorithms in user programs of the above mentioned calculators if they are able to solve the following integral numerically, among others. It can be found in HP Journal 8/1980 p. 28:
 
