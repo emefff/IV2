@@ -157,7 +157,7 @@ The 3D printed parts are all PETG except the display frame which was made in PLA
 
 -) keyboard matrix (a thin matrix covering the buttons and leaving a flat surface for a thin printed keyboard overlay)
 
-The layout of the calculator is based around a perforated circuit board with standoffs to the bottom for making the necessary space for wiring, battery and MCU board. The MCU board is mounted onto an adapter which is in turn mounted to the circuit board. Everything is made to last and to be replaceable. The keys are quite generic, as is the SSD1306 display. The whole assembly is held in the housing with 6 magnets glued into the housing. The battery is glued in place, as is the display. Screw heads are covered with the display frame and the keyboard matrix, respectively. The inner workings of my calc look like this:
+The layout of the calculator is based around a perforated circuit board with standoffs to the bottom for making the necessary space for wiring, battery and MCU board. The MCU board is mounted onto an adapter which is in turn mounted to the circuit board. Everything is made to last and to be replaceable. The keys are quite generic, as is the SSD1306 display. The whole assembly is held in the housing with 6 magnets glued into the housing. The battery is glued in place, as is the display. Screw heads are covered with the display frame and the keyboard matrix, respectively. The inner workings of my build look like this:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/030ba5bf-cb78-4fdb-bcee-62c573c99cb4" style="width:50%; height:auto;" />
