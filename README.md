@@ -122,7 +122,7 @@ FV = 0 ("0 ENTER 3 STO")
 Just pressing FSOLV will yield: 20.921237. Comparing with HP12c (i=8, PV=1000, PMT=-100, FV=0) pressing the n-button:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c27113b9-cc50-452b-aea8-d05a7fbea8df" style="width:50%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/64ddbc61-46fd-4b40-aad4-4a7c078e7a77" style="width:50%; height:auto;" />
 </p>
 
 
