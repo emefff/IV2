@@ -24,6 +24,11 @@ From my experience, I started this project with Arduino, PlatformIO is the much 
 
 ## Changes in IVEE2
 
+### More registers
+
+In IVEE2, more registers are usable in flash and in RAM. Both range from 0-99 now. I mainly use RAM regs for intermediate storage of variables in functions, that have to be read and written very quickly. For the flash registers use the usual commands STO and RCL. For the new RAM registers use STR and RCR in a similar fashion. 
+
+
 ### Plotting functions
 
 The new chip has vastly more RAM, so the full screen buffer for SSD1306 is not an issue. 1x1 pixel graphs look a lot finer that the previous 2x2 pixels. A comparison between IVEE and IVEE2 with ln from 0 to 2 is shown in the following image. The new printing algorithm also connects the dots with line elements:
