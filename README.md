@@ -138,7 +138,25 @@ Just pressing FSOLV will yield: 20.921237. Comparing with HP12c (i=8, PV=1000, P
 The results match as HP12c rounds up to the next integer. From this funny little example we have learned that an interest rate of 8% is quite high and we have to pay more than double the amount back. Horrible!
 
 
+## Hardware
 
+Of couse, a one-off model like this calculator is destined for 3D printing. In the shared folder 'hardware' you'll find a FreeCAD file with the latest design. Everything is modeled in CAD. This can be quite deceiving: thinking you have modeled 'everything', you forget about stupid mistakes to be made with stuff you didn't model. This happenede to me here with the wiring. Any sane person would not model this in 3D, the designing of every wire alone would take too long, with limited benefit. But here it would have helped: the distance between MCU board and battery is crucial for the position of the USB-C cutout in the housing! Forgetting about this or not leaving enough room for wires that bend and need space, has left me with a MCU board position, that did not quite fit the modeled USB-cutout. A very basic and stupid mistake. :-(
+
+The 3D printed parts are all PETG except the display frame which was made in PLA. The parts are:
+
+-) housing
+
+-) display frame
+
+-) MCU board adapter (includes a tiny socket for a reset button)
+
+-) keyboard matrix (a thin matrix covering the buttons and leaving a flat surface for a thin printed keyboard overlay)
+
+The layout of the calculator is based around a perforated circuit board with standoffs to the bottom for making the necessary space for wiring, battery and MCU board. The MCU board is mounted onto an adapter which is in turn mounted to the circuit board. Everything is made to last and to be replaceable. The keys are quite generic, as is the SSD1306 display. The whole assembly is held in the housing with 6 magnets glued into the housing. The battery is glued in place, as is the display. Screw heads are covered with the display frame and the keyboard matrix, respectively. The inner workings of my calc look like this:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/030ba5bf-cb78-4fdb-bcee-62c573c99cb4" style="width:50%; height:auto;" />
+</p>
 
 
 
