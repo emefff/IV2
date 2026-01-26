@@ -78,8 +78,14 @@ The solver implemented is, more or less, an exact port from wp34s (written in As
 Clearly, the better you already know your function, the more likely you will find all roots. 
 
 
+## Programming
 
+Programming is basically unchanged from IVEE, so I will just give a brief description. If you are familiar with programming the HP41c or HP42s, then you will not have any difficulties. Programs are entered RPN style, like on HP41C, but we can also use the menu like on HP42s (similar but a bit different). The main difference to the RPN style on HP41c is that we don't need RTN or VIEW to present a value on the stack. Basically every function included already does that. Already included complex number capabilites for every function are an improvement over HP41c, but displaying is not as convenient as on HP42s (single line complex numbers, but reduced number of digits). For example, the program
+"0, SWP, CPX. EXP" will return EXP(i*x). And indeed, "PI F(X)" gives "a -1, i -8.74228E-8", the complex identity 
 
+$$
+\exp(i*pi) = -1
+$$
 
 
 
