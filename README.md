@@ -93,6 +93,11 @@ $$
 
 with a bit of a rounding error in the imaginary part, though. 
 
+Now, let us test a version of the TVM formula with monthly payments:
+
+$$
+FV = PV * (1+i)^n + PMT * [(1+i)^n − 1)/i]
+&&
 
 
 
