@@ -1,4 +1,4 @@
-# IVEE2 - a Powerful Programable RPN Calculator based on IVEE
+# IVEE2 - a Powerful Programmable RPN Calculator based on IVEE
 
 ## Purpose
 IVEE2 is a port of IVEE to nice!nanov2. It includes some changes that make use of the faster MCU, more RAM and flash space. The main driver behind this was the limited space left on the original IVEE on ProMicro. As far as I remember only one single byte was free on the original calculator. The original code of IVEE can be found in
