@@ -121,7 +121,9 @@ FV = 0 ("0 ENTER 3 STO")
 
 Just pressing FSOLV will yield: 20.921237. Comparing with HP12c (i=8, PV=1000, PMT=-100, FV=0) pressing n:
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c27113b9-cc50-452b-aea8-d05a7fbea8df)" style="width:50%; height:auto;" />
+</p>
 
 
 The results match as HP12c rounds up to the next integer. From this funny little example we have learned that an interest rate of 8% is quite high and we have to pay more than double the amount back. Horrible!
