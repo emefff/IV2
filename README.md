@@ -159,7 +159,7 @@ The layout of the calculator is based around a perforated circuit board with sta
 </p>
 
 
-
+Try to keep it nice and tidy, a long battery cable pays off in the end and during the build. 
 
 
 
