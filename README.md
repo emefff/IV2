@@ -69,7 +69,7 @@ Clearly, we find the implemented algorithm can in fact solve this integral. The 
 
 ### Solver/Root finder
 
-The solver implemented is, more or less, an exact port from wp34s (written in Assembler, the source can be found here: https://sourceforge.net/projects/wp34s/files/) to C++. It is a very capable solver, combinig and switching between bisection, secant, quadratic interpolation, and Ridder's method. Like with integration (FINT), the function of interesest must be placed on top of the PRG list. To find the root of a function enter a start interval (X and Y) and press FSOLVE. There are measures in place, that start the solver anyway with random values, if only one or no value is on the stack. However, in a function with multiple roots you will likely not find the desired root (or none at all!) if no interval is given. For example, with above function we get:
+The solver implemented is, more or less, an exact port from wp34s (written in Assembler, the source can be found here: https://sourceforge.net/projects/wp34s/files/) to C++. It is a very capable solver, combining and switching between bisection, secant, quadratic interpolation, and Ridder's method. Like with integration (FINT), the function of interesest must be placed on top of the PRG list. To find the root of a function enter a start interval (X and Y) and press FSOLVE. There are measures in place, that start the solver anyway with random values, if only one or no value is on the stack. However, in a function with multiple roots you will likely not find the desired root (or none at all!) if no interval is given. For example, with above function we get:
 
 "40 ENTER 80 FSOLVE" --> "7.17527E-13"
 
