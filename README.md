@@ -99,10 +99,15 @@ $$
 FV(n) = PV * (1+i)^n + PMT * [(1+i)^n − 1)/i]
 $$
 
+
 i...yearly interest rate
+
 n...months
+
 FV...future value
+
 PMT...monthly payment
+
 PV...present value
 
 When we enter this on IVEE2 we have different options. Making use of flash and RAM registers we may enter a formula in PRG mode like this:
