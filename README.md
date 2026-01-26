@@ -150,7 +150,7 @@ Overview of the CAD:
 View of the parts inside:
 
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/bfd7f31b-daef-47b2-bc88-482e52292145](https://github.com/user-attachments/assets/dc776e3c-7f7a-4126-8034-a8945dfebc21)" style="width:50%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/dc776e3c-7f7a-4126-8034-a8945dfebc21" style="width:50%; height:auto;" />
 </p>
 
 The 3D printed parts are all PETG except the display frame which was made in PLA. The parts are:
