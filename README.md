@@ -142,6 +142,11 @@ The results match as HP12c rounds up to the next integer. From this funny little
 
 Of couse, a one-off model like this calculator is destined for 3D printing. In the shared folder 'hardware' you'll find a FreeCAD file with the latest design. Everything is modeled in CAD. This can be quite deceiving: thinking you have modeled 'everything', you forget about stupid mistakes to be made with stuff you didn't model. This happenede to me here with the wiring. Any sane person would not model this in 3D, the designing of every wire alone would take too long, with limited benefit. But here it would have helped: the distance between MCU board and battery is crucial for the position of the USB-C cutout in the housing! Forgetting about this or not leaving enough room for wires that bend and need space, has left me with a MCU board position, that did not quite fit the modeled USB-cutout. A very basic and stupid mistake. :-(
 
+Overview of the CAD:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bfd7f31b-daef-47b2-bc88-482e52292145" style="width:50%; height:auto;" />
+</p>
+
 The 3D printed parts are all PETG except the display frame which was made in PLA. The parts are:
 
 -) housing
@@ -160,7 +165,7 @@ The layout of the calculator is based around a perforated circuit board with sta
 
 
 Try to keep it nice and tidy, a long battery cable pays off in the end and during the build. 
-
+The keyboard matrix shown in these pictures is still the old version. 
 
 
 
