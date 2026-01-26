@@ -93,11 +93,32 @@ $$
 
 with a bit of a rounding error in the imaginary part, though. 
 
-Now, let us test a version of the TVM formula with monthly payments:
+Now, let us test a version of the TVM formula with monthly payments (we use the notation on the HP12c):
 
 $$
-FV = PV * (1+i)^n + PMT * [(1+i)^n − 1)/i]
+FV(n) = PV * (1+i)^n + PMT * [(1+i)^n − 1)/i]
 $$
+
+i...yearly interest rate
+n...months
+FV...future value
+PMT...monthly payment
+PV...present value
+
+When we enter this on IVEE2 we have different options. Making use of flash and RAM registers we may enter a formula in PRG mode like this:
+
+"0, STR, CLR, 0, RCL, 1, +, 0, RCR, POW, 1, RCL, *, 0, RCL, 1, +, 0, RCR, POW, 1, -, 0, RCL, /, 2, RCL, *, +, 3, RCL, -"
+
+First we store n in RAM reg nr. 0, we CLR the stack, then enter the formula. When we put it on top in PRG mode, we can use FSOLV (fS internally) to solve for n at FV = 0. For our example we use the follwing numbers:
+i = 0.08 ("0.08 ENTER 0 STO")
+PV = 1000 ("1000 ENTER 1 STO")
+PMT = -100 ("100 N ENTER 2 STO")
+FV = 0 ("0 ENTER 3 STO")
+
+
+
+
+
 
 
 
