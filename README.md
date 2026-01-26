@@ -110,11 +110,11 @@ PMT...monthly payment
 
 PV...present value
 
-When we enter this on IVEE2 we have different options. Making use of flash and RAM registers we may enter a formula in PRG mode like this:
+Entering this on IVEE2 we have different options. Making use of flash and RAM registers we may enter a formula in PRG mode like this:
 
 "0, STR, CLR, 0, RCL, 1, +, 0, RCR, POW, 1, RCL, *, 0, RCL, 1, +, 0, RCR, POW, 1, -, 0, RCL, /, 2, RCL, *, +, 3, RCL, -"
 
-First we store n in RAM reg nr. 0, we CLR the stack, then enter the formula. When we put it on top in PRG mode, we can use FSOLV (fS internally) to solve for n at FV = 0, that is, we want to find the number of months we have to pay back the 100 bucks. For our example we use the follwing numbers:
+First we store n in RAM reg nr. 0, we CLR the stack, then enter the formula. When we put it on top in PRG mode, we can use FSOLV (fS internally) to solve for n at FV = 0, that is, we want to find the number of months we have to pay back the 100 bucks. For our example we use the follwing numbers in 4 flash registers 0-3:
 
 i = 0.08 ("0.08 ENTER 0 STO")
 
@@ -130,8 +130,9 @@ Just pressing FSOLV will yield: 20.921237. Comparing with HP12c (i=8, PV=1000, P
   <img src="https://github.com/user-attachments/assets/64ddbc61-46fd-4b40-aad4-4a7c078e7a77" style="width:50%; height:auto;" />
 </p>
 
-
 The results match as HP12c rounds up to the next integer. From this funny little example we have learned that an interest rate of 8% is quite high and we have to pay more than double the amount back. Horrible!
+
+
 
 
 
