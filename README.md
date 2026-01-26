@@ -84,7 +84,7 @@ Programming is basically unchanged from IVEE, so I will just give a brief descri
 "0, SWP, CPX. EXP" will return EXP(i*x). And indeed, "PI F(X)" gives "a -1, i -8.74228E-8", the complex identity 
 
 $$
-\exp(i*pi) = -1
+\exp(i*\pi) = -1
 $$
 
 
