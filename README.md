@@ -109,7 +109,7 @@ When we enter this on IVEE2 we have different options. Making use of flash and R
 
 "0, STR, CLR, 0, RCL, 1, +, 0, RCR, POW, 1, RCL, *, 0, RCL, 1, +, 0, RCR, POW, 1, -, 0, RCL, /, 2, RCL, *, +, 3, RCL, -"
 
-First we store n in RAM reg nr. 0, we CLR the stack, then enter the formula. When we put it on top in PRG mode, we can use FSOLV (fS internally) to solve for n at FV = 0. For our example we use the follwing numbers:
+First we store n in RAM reg nr. 0, we CLR the stack, then enter the formula. When we put it on top in PRG mode, we can use FSOLV (fS internally) to solve for n at FV = 0, that is, we want to find the number of months we have to pay back the 100 bucks. For our example we use the follwing numbers:
 
 i = 0.08 ("0.08 ENTER 0 STO")
 
