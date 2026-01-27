@@ -187,11 +187,11 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 
 -) wires
 
--) 6x standoff nuts for short M3*5mm screws
+-) 6x standoff nuts for short M3 * 5mm screws
 
--) 6x 4*4*2mm magnets
+-) 6x 4 * 4 *2mm magnets
 
--) 6x M3*5mm screws
+-) 6x M3 * 5mm screws
 
 -) 1x perforated PCB, prefer the ones with lugged holes, not the ones with just holes. The lugs make soldering something to the holes easier
 
@@ -207,7 +207,7 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 
 -) USB-C cable for flashing and charging the LiIon battery
 
--) 1x 4*4mm reset button, fits the twerp on the adapter for the MU
+-) 1x 4 * 4mm reset button, fits the twerp on the adapter for the MU
 
 -) optional phone charger 
 
