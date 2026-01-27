@@ -39,7 +39,8 @@ The new chip has vastly more RAM, so the full screen buffer for SSD1306 is not a
 <p align="center">
   <img src="https://github.com/user-attachments/assets/98f39e8e-1504-46ef-aae1-f36a729e2209" style="width:50%; height:auto;" />
 </p>
-(Notice also the size difference, IVEE has been biult nealry wthout CAD. IVEE2 was modelled 95% in CAD --> nearly 40% of volume saved)
+
+Notice also the size difference, IVEE has been built almost wthout CAD (the box was modeled 'around' what was already built without CAD). IVEE2 was modelled 95% in CAD --> nearly 40% of volume saved.
 
 Just like with IVEE, the function to plot must be placed on top in the program list (use TOP for this in PRG mode). Just enter the limits and plot the function with "0 ENTER 2 FPLOT". 
 
