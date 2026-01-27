@@ -199,9 +199,11 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 
 -) 2 resistors for the voltage divider
 
--) a On/Off switch
+-) 1x On/Off switch
 
 -) USB-C cable for flashing and charging the LiIon battery
+
+-) 1x 4*4mm reset button, fits the twerp on the adapter for the MU
 
 -) optional phone charger 
 
