@@ -189,7 +189,7 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 
 -) 6x M3*5mm screws
 
--) perforated PCB, prefer the ones with lugged holes, not the ones with just holes. The lugs make soldering something to the holes easier
+-) 1x perforated PCB, prefer the ones with lugged holes, not the ones with just holes. The lugs make soldering something to the holes easier
 
 -) double-sided tape, also to correct height differences
 
@@ -197,7 +197,7 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 
 -) Kapton tape for isolation where needed
 
--) 2 resistors for the voltage divider
+-) 2x resistor for the voltage divider, here 2x 10k (not good regarding voltage resulotion but ok)
 
 -) 1x On/Off switch
 
