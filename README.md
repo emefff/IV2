@@ -182,17 +182,29 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 ### Additional Parts needed
 
 -) Cables
+
 -) wires
+
 -) 6x standoff nuts for short M3*5mm screws
+
 -) 6x M3*5mm screws
+
 -) perforated PCB, prefer the ones with lugged holes, not the ones with just holes. The lugs make soldering something to the holes easier
+
 -) double-sided tape, also to correct height differences
+
 -) hot glue
+
 -) Kapton tape for isolation where needed
+
 -) 2 resistors for the voltage divider
+
 -) a On/Off switch
+
 -) USB-C cable for flashing and charging the LiIon battery
+
 -) optional phone charger 
+
 
 
 # ToDos
