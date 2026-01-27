@@ -213,6 +213,8 @@ If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housi
 
 -) new keyboard overlay to be designed fitting this keyboard layout. The layout shown in the images is still the old design. I will upload the files when this is completed.
 
+-) anything important that comes up, we'll see.
+
 maybes:
 
 -) perhaps move the annunciator back to the old position for base modes other than scientific.
