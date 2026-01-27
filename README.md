@@ -179,6 +179,22 @@ The keyboard matrix shown in these pictures is still the old version.
 Recommendations for 3D printing:
 If you can, use at least PETG on a TXT sheet (not as brittle as PLA, a PLA housing can break when falling off a table). Print a 5mm brim or mouse ears at the corners of the housing as it is quite large. Also use a brim on the keyboard matrix, the adapter is quite small, maybe a smaller brim will do also. The display fram in PLA does not need a brim, it sticks very well to a PEI sheet. Use structural mode and 3 perimeters for the housing and two perimeters for the keyboard matrix (the see some mechanical loads), maybe even 0.15m layers. The keyboard matrix must stay somewhat flexible for a lower button force. There are even variants of the housing in the FreeCAD file that include a brim in CAD. Feel free to use this or add a brim in your slicer. 
 
+### Additional Parts needed
+
+-) Cables
+-) wires
+-) 6x standoff nuts for short M3*5mm screws
+-) 6x M3*5mm screws
+-) perforated PCB, prefer the ones with lugged holes, not the ones with just holes. The lugs make soldering something to the holes easier
+-) double-sided tape, also to correct height differences
+-) hot glue
+-) Kapton tape for isolation where needed
+-) 2 resistors for the voltage divider
+-) a On/Off switch
+-) USB-C cable for flashing and charging the LiIon battery
+-) optional phone charger 
+
+
 # ToDos
 
 -) new keyboard overlay to be designed fitting this keyboard layout. The layout shown in the images is still the old design. I will upload the files when this is completed.
