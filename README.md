@@ -177,7 +177,14 @@ Try to keep it nice and tidy, a long battery cable pays off in the end and durin
 The keyboard matrix shown in these pictures is still the old version. 
 
 
+# ToDos
 
+-) new keyboard overlay to be designed fitting this keyboard layout. The layout shown in the images is still the old design. I will upload the files when this is completed.
+
+maybes:
+-) perhaps move the annunciator back to the old position for base modes other than scientific.
+-) the statistical functions were not tested, because I do not need them. With the increased flash registers there are much more possibilities.
+-) perhaps use the onboard RTC for the clock and maybe implement a stopwatch, date and time functions. Maybe similar to TIME module on HP41c. 
 
 
 
