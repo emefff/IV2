@@ -27,6 +27,44 @@ From my experience, I started this project with Arduino, PlatformIO is the much 
 
 ## Changes in IVEE2
 
+-) enhanced floating point precision, doubles are now double precision instead of single.
+
+-) 4 line stack display. I prefer this over the 2 line display of the original.
+
+-) 32kB user memory for more storage in program mode and also longer programs. 
+
+-) Gauss Kronrod integration instead of Simpson rule: Changing to this method allows for solving very difficult integrals
+   numerically. The accuracy of this method can be adapted via GK_MAX_DEPTH. Currently it is set for acceptable duration.
+   The implemented integration algorithm beats HP42, HP15C and HP41c (with ADVANCED or PPC module integration routines) 
+   any time in both speed and accuracy.
+   
+-) WP34s style solver: the solver of WP34s written in assembler was ported. It is very capable and switches between different
+   methods combining bisection, secant, quadratic interpolation, and Ridder's method. The original code can be found here:
+   https://sourceforge.net/projects/wp34s/files/ .
+   
+-) 100 registers in flash ranging from 0-99, storing and recalling via usual commands STO and RCL.
+
+-) 100 registers in RAM ranging from 0-99: storing and recalling via two new commands STR and RCR.
+
+-) 1x1 pixel graphs for more accurate graphs in FPLOT.
+
+-) 5 digit floating point display.
+
+-) wear leveling of flash storage. nice!nanov2 can only delete 4kB pages. In order to be usable for years, a rotating wear-leveling is 
+   applied to the whole user storage.
+   
+-) the new TOP (moveprgtop() in code) command moves a program to top of list in PRG mode: In order to not have to repeatedly UP 
+   a program to the top of the list in PRG mode, mainly to FPLOT a function, the PRG chosen directly moves to the top of the list. 
+   Sorting is done in RAM, only a single rewrite or user flash is necessary. TOP is on the 9 key (= KEY4 in code) in PRG mode.
+   
+-) Annunciator (_, f, g) moved to top right corner.
+
+-) Builtin functions use RAM registers instead of flash.
+
+-) CLK function slightly changed, enter hours, minutes, seconds consecutively on stack:
+   e.g. 11 ENTER, 22 ENTER, 45 CLK
+   starts the clock at 11:22:45. The clock does not use the built-in RTC of the nice!nanov2 but is drift compensated.
+   
 ### More registers
 
 In IVEE2, more registers are usable in flash and in RAM. Both range from 0-99 now. I mainly use RAM regs for intermediate storage of variables in functions, that have to be read and written very quickly. For the flash registers use the usual commands STO and RCL. For the new RAM registers use STR and RCR in a similar fashion. 
