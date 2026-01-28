@@ -27,6 +27,8 @@ From my experience, I started this project with Arduino, PlatformIO is the much 
 
 ## Changes in IVEE2
 
+### Overview of changes
+
 -) enhanced floating point precision, doubles are now double precision instead of single.
 
 -) 4 line stack display. I prefer this over the 2 line display of the original.
