@@ -37,7 +37,7 @@ From my experience, I started this project with Arduino, PlatformIO is the much 
 
 -) Gauss Kronrod integration instead of Simpson rule: Changing to this method allows for solving very difficult integrals
    numerically. The accuracy of this method can be adapted via GK_MAX_DEPTH. Currently it is set for acceptable duration.
-   The implemented integration algorithm beats HP42, HP15C and HP41c (with ADVANCED or PPC module integration routines) 
+   The implemented integration algorithm beats HP-42S, HP-15C and HP-41C (with ADVANCED or PPC module integration routines) 
    any time in both speed and accuracy.
    
 -) WP34s style solver: the solver of WP34s written in assembler was ported. It is very capable and switches between different
@@ -85,13 +85,13 @@ Notice also the size difference, IVEE has been built without CAD (only later the
 Just like with IVEE, the function to plot must be placed on top in the program list (use TOP for this in PRG mode). Just enter the limits and plot the function with "0 ENTER 2 FPLOT". 
 
 ### Integration algorithm 
-Being an RPN calculator enthusiast and aware of their historic significance in science and engineering, I really wanted to include a better algorithm in IVEE2. An algorithm that can even outperform the algorithms present on some of the 'stars' in the RPN sky. There are many examples of functions that cannot be solved adequately with some of the most cherished (and expensive) RPN calculators. To readers of the HP Journal, specifically issue 8/1980, where professor William Kahan presented the capabilties and shortcomings of the integration algorithm developed for HP 34C, which is, to my knowledge, also included in HP 15C, HP41C (Advantage Module) and HP42s, this is not news. Personally, I tested numerous calculators and integration algorithms in user programs of the above mentioned calculators if they are able to solve the following integral numerically, among others. It can be found in HP Journal 8/1980 p. 28 (https://hparchive.com/Journals/HPJ-1980-08.pdf):
+Being an RPN calculator enthusiast and aware of their historic significance in science and engineering, I really wanted to include a better algorithm in IVEE2. An algorithm that can even outperform the algorithms present on some of the 'stars' in the RPN sky. There are many examples of functions that cannot be solved adequately with some of the most cherished (and expensive) RPN calculators. To readers of the HP Journal, specifically issue 8/1980, where professor William Kahan presented the capabilties and shortcomings of the integration algorithm developed for HP-34C, which is, to my knowledge, also included in HP-15C, HP-41C (Advantage Module) and HP-42s, this is not news. Personally, I tested numerous calculators and integration algorithms in user programs of the above mentioned calculators if they are able to solve the following integral numerically, among others. It can be found in HP Journal 8/1980 p. 28 (https://hparchive.com/Journals/HPJ-1980-08.pdf):
 
 $$
 \int_{-128}^{128} [u(u^2-47^2)(u^2-88^2)(u^2-117^2)]^2  du = 1.31026895247E28
 $$
 
-On first glance, this is solvable analytically, probably by a 16 year old pupil, right? But numerically, this integral is a different story. It is spiky between the roots and reaching large arguments. Any algorithm tackling this must either be able to resolve the spikes with a great number of intervals or be adaptive. To prove this integral is far from trivial numerically, the following image shows some results calculated by some famous RPN calculators:
+On first glance, this is solvable analytically, probably by a 16 year old pupil, right? But numerically, this integral is a different story. It is spiky between the roots and reaching large arguments. Any algorithm tackling this must either be able to resolve the spikes with a great number of intervals or be adaptive. To prove this integral is far from trivial numerically, the following image shows results calculated by the famous RPN calculators HP-41CX, HP-15C and HP-42S:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/861c44a0-5399-473c-8537-32584fee2fb1" style="width:50%; height:auto;" />
@@ -135,7 +135,7 @@ Clearly, the better you already know your function, the more likely you will fin
 
 ## Programming
 
-Programming is basically unchanged from IVEE but with a lot more storage in flash, so I will just give a brief description. If you are familiar with programming the HP41c or HP42s, then you will not have any difficulties. Programs are entered RPN style, like on HP41C, but we can also use the menu like on HP42s (similar but a bit different. We can choose functions from the DICT or USER menu). The main difference to the RPN style on HP41c is that we don't need RTN or VIEW to present a value on the stack, we also don't have the function LBL within the function itself. The name of the function is outside the function/program. Already included complex number capabilites for every function are an improvement over HP41c, but displaying is not as convenient as on HP42s (HP42s: single line complex numbers, but reduced number of digits, IVEE2: two line display of complex numbers). For example, the program "0, SWP, CPX, EXP" returns EXP(i*x). And indeed, "PI F(X)" gives "a -1, i -8.74228E-8", the complex identity 
+Programming is basically unchanged from IVEE but with a lot more storage in flash, so I will just give a brief description. If you are familiar with programming the HP-41C or HP42S, then you will not have any difficulties. Programs are entered RPN style, like on HP-41C, but we can also use the menu like on HP-42s (similar but a bit different. We can choose functions from the DICT or USER menu). The main difference to the RPN style on HP-41c is that we don't need RTN or VIEW to present a value on the stack, we also don't have the function LBL within the function itself. The name of the function is outside the function/program. Already included complex number capabilites for every function are an improvement over HP-41C, but displaying is not as convenient as on HP-42s (HP-42s: single line complex numbers, but reduced number of digits, IVEE2: two line display of complex numbers). For example, the program "0, SWP, CPX, EXP" returns EXP(i*x). And indeed, "PI F(X)" gives "a -1, i -8.74228E-8", the complex identity 
 
 $$
 \exp(i*\pi) = -1
@@ -143,7 +143,7 @@ $$
 
 with a bit of a rounding error in the imaginary part, though. 
 
-Now, let us test a version of the TVM formula with monthly payments (we use the notation on the HP12c):
+Now, let us test a version of the TVM formula with monthly payments (we use the notation on the HP-12c):
 
 $$
 FV(n) = PV * (1+i)^n + PMT * [(1+i)^n − 1)/i]
@@ -174,13 +174,13 @@ PMT = -100 ("100 N ENTER 2 STO")
 
 FV = 0 ("0 ENTER 3 STO")
 
-Just pressing FSOLV will yield: 20.921237. Comparing with HP12c (i=8, PV=1000, PMT=-100, FV=0) pressing the n-button:
+Just pressing FSOLV will yield: 20.921237. Comparing with HP-12c (i=8, PV=1000, PMT=-100, FV=0) pressing the n-button:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/64ddbc61-46fd-4b40-aad4-4a7c078e7a77" style="width:50%; height:auto;" />
 </p>
 
-The results match as HP12c rounds up to the next integer. From this funny little example we have learned that an interest rate of 8% is quite high and we have to pay more than double the amount back. Horrible!
+The results match as HP-12c rounds up to the next integer. From this funny little example we have learned that an interest rate of 8% is quite high and we have to pay more than double the amount back. Horrible!
 
 
 ## Hardware
